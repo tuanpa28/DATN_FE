@@ -45,10 +45,15 @@ export const fetchUpdateShift = createAsyncThunk(
     "shift/fetchUpdateShift",
     async ({ _id, shift }: { _id: any; shift: any }, thunkAPI) => {
         try {
+<<<<<<< HEAD
             console.log(_id);
             
             const { data } = await getUpdateShift(_id, shift);
             console.log("ahaha",data);
+=======
+            const { data } = await getUpdateShift(_id, shift);
+
+>>>>>>> 5adffac (dm Hao Chien)
             return data.data;
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (error: any) {
