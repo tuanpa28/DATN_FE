@@ -46,6 +46,7 @@ export const fetchUpdateShift = createAsyncThunk(
     async ({ _id, shift }: { _id: any; shift: any }, thunkAPI) => {
         try {
 <<<<<<< HEAD
+<<<<<<< HEAD
             console.log(_id);
             
             const { data } = await getUpdateShift(_id, shift);
@@ -54,6 +55,12 @@ export const fetchUpdateShift = createAsyncThunk(
             const { data } = await getUpdateShift(_id, shift);
 
 >>>>>>> 5adffac (dm Hao Chien)
+=======
+            console.log(_id);
+            
+            const { data } = await getUpdateShift(_id, shift);
+            console.log("ahaha",data);
+>>>>>>> 788bbe1 ( update admin Shift- status, timeslot number shif)
             return data.data;
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
         } catch (error: any) {
