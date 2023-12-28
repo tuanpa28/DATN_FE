@@ -18,7 +18,7 @@ const ModalViewCreatePitch = () => {
 
   const dispatch = useAppDispatch();
 
-  const host = 'http://localhost:8080/api/location/';
+  const host = 'https://datn-be-zqom.onrender.com/api/location/';
 
   useEffect(() => {
     const fetchData = async () => {

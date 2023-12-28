@@ -24,7 +24,7 @@ const PitchUserList = () => {
   const dispatch = useAppDispatch();
   //console.log('pitchs', pitchs);
 
-  const host = 'http://localhost:8080/api/location/';
+  const host = 'https://datn-be-zqom.onrender.com/api/location/';
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(`${host}provinces`);

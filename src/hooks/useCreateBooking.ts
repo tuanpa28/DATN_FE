@@ -5,7 +5,7 @@ import { useNewBookingAfterPayMutation } from '~/Redux/booking/bookingApi';
 import { sendMail } from '~/api/email';
 import { bookChildrenPicthFullMonth, bookMultipleDay, bookOneShiftFullMonth, getCreatShift } from '~/api/shift';
 import { hideLoader, showLoader } from '~/components/LoaderAllPage';
-import { socket } from '~/config/socket';
+// import { socket } from '~/config/socket';
 import templateEmailBill from '~/config/templateEmailBill';
 import { IInfoBooking } from '~/interfaces/booking.type';
 import IShift from '~/interfaces/shift';
@@ -106,7 +106,7 @@ const useCreateBooking = ({ infoBooking, currentUser, setCurrent, price_received
         }
 
         // relatime
-        socket.emit('booking-success', _infoBooking.shift_id);
+        // socket.emit('booking-success', _infoBooking.shift_id);
 
         newBooking(_infoBooking as any)
           .unwrap()

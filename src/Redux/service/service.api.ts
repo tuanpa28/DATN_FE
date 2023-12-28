@@ -4,7 +4,7 @@ import { IService } from '~/interfaces/service';
 const serviceApi = createApi({
   reducerPath: 'serviceApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:8080',
+    baseUrl: 'https://datn-be-zqom.onrender.com',
   }),
   endpoints: (builder) => ({
     getServices: builder.query<{ data: IService[] }, any>({

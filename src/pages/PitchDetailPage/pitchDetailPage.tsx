@@ -21,7 +21,7 @@ import ModalBookMultipleDay from './ModalBookMultipleDay';
 import ModalBookOneShiftFullMonth from './ModalBookOneShiftFullMonth';
 import ModalBookPitchFullMonth from './ModalBookPitchFullMonth';
 import Swal from 'sweetalert2';
-import { socket } from '~/config/socket';
+// import { socket } from '~/config/socket';
 import { checkBookingLimit } from '~/api/user';
 
 const PitchDetailPage = () => {
@@ -182,21 +182,21 @@ const PitchDetailPage = () => {
     fetchData();
   }, [id]);
 
-  useEffect(() => {
-    socket.on('booking-success', (data) => {
-      if (!data) return;
-      const newData: any = childrenPitchs?.map((item: any) => {
-        if (item._id === data.id_chirlden_pitch) {
-          const newShifts = item.shifts?.map((shift: any) => (shift.number_shift === data.number_shift ? data : shift));
-          return { ...item, shifts: newShifts };
-        } else {
-          return item;
-        }
-      });
+  // useEffect(() => {
+  //   socket.on('booking-success', (data) => {
+  //     if (!data) return;
+  //     const newData: any = childrenPitchs?.map((item: any) => {
+  //       if (item._id === data.id_chirlden_pitch) {
+  //         const newShifts = item.shifts?.map((shift: any) => (shift.number_shift === data.number_shift ? data : shift));
+  //         return { ...item, shifts: newShifts };
+  //       } else {
+  //         return item;
+  //       }
+  //     });
 
-      setShildrenPitchs(newData);
-    });
-  }, [childrenPitchs]);
+  //     setShildrenPitchs(newData);
+  //   });
+  // }, [childrenPitchs]);
 
   const data = [
     {

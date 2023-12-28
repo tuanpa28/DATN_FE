@@ -10,7 +10,7 @@ import { matchOpponent } from '~/api/shift';
 import Loading from '~/components/Loading';
 
 const FindOpponentPage = () => {
-  const host = 'http://localhost:8080/api/location/';
+  const host = 'https://datn-be-zqom.onrender.com/api/location/';
   const [cities, setCities] = useState([]);
   const [districts, setDistricts] = useState([]);
   const [wards, setWards] = useState([]);

@@ -5,7 +5,7 @@ const paymentApi = createApi({
   reducerPath: 'paymentApi',
   tagTypes: ['payment'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:8080',
+    baseUrl: 'https://datn-be-zqom.onrender.com',
   }),
   endpoints: (builder) => ({
     getAllPaymentByUserId: builder.query<{ data: IPayment[] }, any>({

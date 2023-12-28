@@ -40,7 +40,7 @@ const convertToFilterFormat = (serviceName: any) => {
 };
 const PitchPage = () => {
   const [form] = Form.useForm();
-  const host = 'http://localhost:8080/api/location/';
+  const host = 'https://datn-be-zqom.onrender.com/api/location/';
   const [cities, setCities] = useState([]);
   const [districts, setDistricts] = useState([]);
   const [wards, setWards] = useState([]);
