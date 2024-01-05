@@ -4,7 +4,7 @@ import IShift from '~/interfaces/shift';
 const shiftApi = createApi({
   reducerPath: 'shiftApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://datn-be-zqom.onrender.com',
+    baseUrl: 'https://datn-be-chi.vercel.app',
   }),
   endpoints: (builder) => ({
     getShiftsByChildrenPitch: builder.query<{ data: IShift[] }, { childrenPitchId: string; params: any }>({

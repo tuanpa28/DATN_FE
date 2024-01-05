@@ -10,7 +10,7 @@ import { matchOpponent } from '~/api/shift';
 import Loading from '~/components/Loading';
 
 const FindOpponentPage = () => {
-  const host = 'https://datn-be-zqom.onrender.com/api/location/';
+  const host = 'https://datn-be-chi.vercel.app/api/location/';
   const [cities, setCities] = useState([]);
   const [districts, setDistricts] = useState([]);
   const [wards, setWards] = useState([]);

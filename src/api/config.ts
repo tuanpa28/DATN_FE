@@ -1,6 +1,6 @@
 import axios from 'axios';
 const instance = axios.create({
-  baseURL: 'https://datn-be-zqom.onrender.com/api/',
+  baseURL: 'https://datn-be-chi.vercel.app/api/',
 });
 
 instance.interceptors.request.use(

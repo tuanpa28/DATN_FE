@@ -4,7 +4,7 @@ import { IBooking } from '~/interfaces/booking.type';
 const bookingApi = createApi({
   reducerPath: 'bookingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://datn-be-zqom.onrender.com',
+    baseUrl: 'https://datn-be-chi.vercel.app',
   }),
   endpoints: (builder) => ({
     getAllBookingByUserId: builder.query<{ data: IBooking[] }, any>({

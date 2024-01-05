@@ -61,7 +61,7 @@ const DashboardPitchPage = () => {
   const onChange: DatePickerProps['onChange'] = (_, dateString) => {
     //console.log(date, dateString);
     if (dateString) {
-      const apiUrl = `https://datn-be-zqom.onrender.com/api/statistical/revenue?year=${dateString}&pitch_user=${idUser}`;
+      const apiUrl = `https://datn-be-chi.vercel.app/api/statistical/revenue?year=${dateString}&pitch_user=${idUser}`;
       fetchData(apiUrl);
     }
   };
@@ -83,7 +83,7 @@ const DashboardPitchPage = () => {
       const month = dateString.split('-')[1];
       //console.log(date);
 
-      const apiUrl = `https://datn-be-zqom.onrender.com/api/statistical/revenue/${month}?year=2023&pitch_user=${idUser}&start_time=1&end_time=31`;
+      const apiUrl = `https://datn-be-chi.vercel.app/api/statistical/revenue/${month}?year=2023&pitch_user=${idUser}&start_time=1&end_time=31`;
 
       try {
         const response = await axios.get(apiUrl);

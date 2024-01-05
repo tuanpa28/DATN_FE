@@ -4,7 +4,7 @@ import IChildrentPitch from '~/interfaces/childrentPitch';
 const pitchApi = createApi({
   reducerPath: 'pitchApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://datn-be-zqom.onrender.com',
+    baseUrl: 'https://datn-be-chi.vercel.app',
   }),
   endpoints: (builder) => ({
     getAllChildrenPitchByPitchId: builder.query<{ data: IChildrentPitch[] }, string>({

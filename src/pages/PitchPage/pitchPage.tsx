@@ -40,7 +40,7 @@ const convertToFilterFormat = (serviceName: any) => {
 };
 const PitchPage = () => {
   const [form] = Form.useForm();
-  const host = 'https://datn-be-zqom.onrender.com/api/location/';
+  const host = 'https://datn-be-chi.vercel.app/api/location/';
   const [cities, setCities] = useState([]);
   const [districts, setDistricts] = useState([]);
   const [wards, setWards] = useState([]);

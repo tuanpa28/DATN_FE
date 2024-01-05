@@ -18,7 +18,7 @@ const ModalViewCreatePitch = () => {
 
   const dispatch = useAppDispatch();
 
-  const host = 'https://datn-be-zqom.onrender.com/api/location/';
+  const host = 'https://datn-be-chi.vercel.app/api/location/';
 
   useEffect(() => {
     const fetchData = async () => {

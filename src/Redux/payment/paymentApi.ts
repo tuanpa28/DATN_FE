@@ -5,7 +5,7 @@ const paymentApi = createApi({
   reducerPath: 'paymentApi',
   tagTypes: ['payment'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://datn-be-zqom.onrender.com',
+    baseUrl: 'https://datn-be-chi.vercel.app',
   }),
   endpoints: (builder) => ({
     getAllPaymentByUserId: builder.query<{ data: IPayment[] }, any>({

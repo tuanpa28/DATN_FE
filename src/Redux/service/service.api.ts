@@ -4,7 +4,7 @@ import { IService } from '~/interfaces/service';
 const serviceApi = createApi({
   reducerPath: 'serviceApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://datn-be-zqom.onrender.com',
+    baseUrl: 'https://datn-be-chi.vercel.app',
   }),
   endpoints: (builder) => ({
     getServices: builder.query<{ data: IService[] }, any>({
